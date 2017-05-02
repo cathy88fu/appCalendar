@@ -3,6 +3,8 @@ appCalendar
 
 appCalendar是一款简单的移动端日历组件，提供单个日期和日期范围选择。
 
+![Image text](https://github.com/cathy88fu/appCalendar/blob/master/img/appcalendar.png)
+
 
 ## 文件引入
 
