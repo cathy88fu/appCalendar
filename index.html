@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>AppCalendar</title>
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/appCalendar.css" type="text/css"/>
+</head>
+<body>
+<div id="ac1" class="app-calendar">
+    <div class="dateArea"><span>请选择日期</span><i class="splitLine"></i><span></span></div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jsfunction.min.js"></script>
+<script src="js/appCalendar.js"></script>
+<script>
+    $("#ac1").appCalendar({
+       // type:'single',
+        callback:function(data){
+            $('.dateArea span:eq(0)').html(data[0]);
+            $('.dateArea .splitLine').html('~')
+            $('.dateArea span:eq(1)').html(data[1]);
+        }
+    });
+</script>
+</html>

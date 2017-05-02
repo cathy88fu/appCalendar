@@ -1,0 +1,94 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+
+.app-calendar span {
+    display: inline-block;
+}
+.app-calendar li {
+    list-style: none;
+}
+.app-calendar .calendar-container {
+    position: absolute;
+    z-index: 99999999;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    display:none;
+}
+.app-calendar .calendar-container .calendar-head, .app-calendar .calendar-container .calendar-week {
+    position: fixed;
+    z-index:10;
+}
+.app-calendar .calendar-container .calendar-head {
+    background: #2e5eaa;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    color: #fff;
+}
+.app-calendar .calendar-container .calendar-head .ico-back{
+    float:left;
+    color:#fff;
+    font-size:20px;
+    margin:0 0 0 10px;
+    position:relative;
+    top:-2px;
+}
+.app-calendar .calendar-container .calendar-week {
+    border:solid 1px #f7f7f7;
+    top: 44px;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    background:#fff;
+}
+.app-calendar .calendar-container .calendar-week span {
+    width: 14.28%;
+    text-align: center;
+    color:#808080;
+}
+.app-calendar .calendar-container .calendar-body {
+    margin-top: 78px;
+}
+.app-calendar .calendar-container .cn-calendar {
+    width: 100%;
+    overflow: hidden;
+}
+.app-calendar .calendar-container .cn-calendar h3 {
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    padding:10px 0 12px;
+    color:#4d4d4d;
+}
+.app-calendar .calendar-container .cn-calendar li {
+    width: 14.28%;
+    padding: 10px 0;
+    margin:2px 0;
+    float: left;
+    text-align: center;
+    color:#4f463d;
+}
+.app-calendar .calendar-container .cn-calendar li.selected {
+    color:#fff;
+    background:#4385f5;
+}
+.app-calendar .calendar-container .cn-calendar li.beselected {
+    background:#ccddf9;
+}
+.app-calendar .calendar-container .cn-calendar li.disabled {
+    color:#cecdcd;
+}
