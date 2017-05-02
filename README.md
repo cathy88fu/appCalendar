@@ -1,5 +1,7 @@
+appCalendar
+============
 
-appCalendar一款简单的移动端日历组件，提供单个日期和日期范围选择。
+appCalendar是一款简单的移动端日历组件，提供单个日期和日期范围选择。
 
 
 ## 文件引入
@@ -59,7 +61,9 @@ appCalendar组件使用了animate动画库。
 	  </tr>
     </table>
 </div>
+
 ## 方法
+
 	.appCalendar(option)
 初始化日历组件，参数接受可选参数	object
 
