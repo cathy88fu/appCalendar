@@ -65,5 +65,5 @@ appCalendar组件使用了animate动画库。
 ## 方法
 
 	.appCalendar(option)
-初始化日历组件，参数接受可选参数	object
+初始化日历组件，接受可选参数	object
 
